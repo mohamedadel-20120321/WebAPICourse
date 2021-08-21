@@ -7,6 +7,7 @@ namespace Core.Models
 {
     public class Project
     {
+        [Key]
         public int ProjectId { get; set; }
 
         [Required]

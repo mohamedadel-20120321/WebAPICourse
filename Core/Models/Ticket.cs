@@ -8,6 +8,7 @@ namespace Core.Models
 {
     public class Ticket
     {
+        [Key]
         public int? TicketId { get; set; }
 
         [Required]

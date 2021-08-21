@@ -37,9 +37,9 @@ namespace PlatformDemo
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, BugsContext context)
+        public void Configure(IApplicationBuilder app, BugsContext context)
         {
-            if (env.IsDevelopment())
+            if (_env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
 
